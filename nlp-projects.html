@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania Projektowe - NLP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .exercise {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .exercise:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .exercise-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .exercise-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .exercise-title {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .difficulty {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-left: auto;
+        }
+
+        .difficulty.easy {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .difficulty.medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .difficulty.hard {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .exercise-description {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .requirements {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+
+        .requirements h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+
+        .requirements ul {
+            margin-left: 1.5rem;
+        }
+
+        .requirements li {
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #666;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .exercise-header {
+                flex-wrap: wrap;
+            }
+
+            .difficulty {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Zadania Projektowe</h1>
+        <p>Wprowadzenie do przetwarzania języka naturalnego [NLP] - Zima 2025</p>
+    </header>
+
+    <div class="container">
+        <div class="exercise">
+            <div class="exercise-header">
+                <div class="exercise-number">5</div>
+                <div class="exercise-title">Implementacja i ewaluacja systemu RAG</div>
+            </div>
+            <div class="exercise-description">
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
+                Implementacja i ewaluacja systemu RAG (Retrieval-Augmented Generation) dla specjalistycznej dziedziny wiedzy dziedzinowej.
+            </div>
+            <div class="requirements">
+                <h3>Zadania:</h3>
+                <ul>
+                    <li>Stworzyć korpus dokumentów specjalistycznych w wybranej dziedzinie (np. inżynieria, IT, programowanie itp.)</li>
+                    <li>Zaprojektować architekturę i zaimplementować system RAG wykorzystujący wybraną metodę indeksowania i wyszukiwania (np. dense retrieval z embedding, sparse retrieval) wraz z jej argumentacją</li>
+                    <li>Porównać skuteczność różnych modeli LLM (self-hosted lub/i poprzez API) jako komponentów generujących odpowiedzi w systemie RAG (np. porównanie 2 modeli)</li>
+                    <li>Przeprowadzić ewaluację systemu pod kątem dokładności odpowiedzi, halucynacji oraz efektywności wyszukiwania, kontekstowości z wykorzystaniem metryk np. RAGAS lub innej wybranej biblioteki</li>
+                    <li>Zbadać i zaproponować techniki optymalizacji systemu (np. Self-RAG, Corrective-RAG, Adaptive RAG lub inne)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="exercise-header">
+                <div class="exercise-number">6</div>
+                <div class="exercise-title">Agent SQL do konwersacyjnej analizy danych</div>
+            </div>
+            <div class="exercise-description">
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
+                Opracowanie Agenta SQL do konwersacyjnej analizy danych ustrukturyzowanych.
+            </div>
+            <div class="requirements">
+                <h3>Zadania:</h3>
+                <ul>
+                    <li>Zaprojektować architekturę i zaimplementować konwersacyjnego agenta SQL z mechanizmami planowania (np. ReAct, MRKL, Plan-and-Solve) w zakresie konwersji języka naturalnego na zapytania SQL (LLM-as-SQL-translator)</li>
+                    <li>Zintegrować system z wybraną bazą danych (np. PostgreSQL, MySQL, SQLite)</li>
+                    <li>Porównać skuteczność różnych modeli LLM (self-hosted lub/i poprzez API) w generowaniu zapytań SQL oraz generowanych odpowiedzi (np. porównanie 2 modeli)</li>
+                    <li>Zaplanować oraz przeprowadzić ewaluację na wybranych danych ustrukturyzowanych</li>
+                    <li>Zbadać zdolność systemu do mechanizmów self-correction błędnych zapytań na podstawie weryfikacji wyników</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="exercise-header">
+                <div class="exercise-number">7</div>
+                <div class="exercise-title">System hybrydowy Vector RAG + GraphRAG</div>
+            </div>
+            <div class="exercise-description">
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
+                Implementacja i ewaluacja hybrydowego systemu wiedzy Vector RAG + GraphRAG - z wykorzystaniem grafów wiedzy.
+            </div>
+            <div class="requirements">
+                <h3>Zadania:</h3>
+                <ul>
+                    <li>Zbudować hybrydowy system łączący graf wiedzy z wektorową bazą dokumentów w wybranej dziedzinie (np. inżynieria, IT, programowanie itp.)</li>
+                    <li>Zbadać i zaimplementować mechanizmy:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Query routing (graf vs. vector search vs. hybrid)</li>
+                            <li>Wybraną metodę Community detection w grafie dla lepszego wyszukiwania kontekstu</li>
+                        </ul>
+                    </li>
+                    <li>Zaimplementować mechanizm automatycznej ekstrakcji relacji i encji z dokumentów do budowy/rozszerzania grafu</li>
+                    <li>Zbadać wpływ różnych strategii chunkowania oraz modelowania tematów na jakość generowanych odpowiedzi</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="exercise-header">
+                <div class="exercise-number">8</div>
+                <div class="exercise-title">System wieloagentowy do rozwiązywania zadań</div>
+            </div>
+            <div class="exercise-description">
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
+                Implementacja systemu wieloagentowego do współpracy agentów AI w rozwiązywaniu złożonych zadań.
+            </div>
+            <div class="requirements">
+                <h3>Zadania:</h3>
+                <ul>
+                    <li>Zaprojektować i zaimplementować system 3-4 wyspecjalizowanych agentów współpracujących przy rozwiązywaniu złożonych zadań (np. Research Agent, Coding Agent, Analysis Agent, Critic Agent) w wybranej dziedzinie (np. inżynieria, IT, programowanie itp.)</li>
+                    <li>Zaimplementować warstwę orkiestracji z wykorzystaniem jednego z frameworków agentowych lub własnej implementacji</li>
+                    <li>Zaprojektować komunikację między agentami</li>
+                    <li>Zbadać skuteczność różnych strategii orkiestracji np. sequential, parallel, concurrent, group chat (co najmniej 2 podejścia)</li>
+                    <li>Zbadać możliwości ewaluacji systemów wieloagentowych</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="exercise-header">
+                <div class="exercise-number">9</div>
+                <div class="exercise-title">Context Engineering - zaawansowane zarządzanie kontekstem</div>
+            </div>
+            <div class="exercise-description">
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
+                Implementacja i ewaluacja technik zaawansowanego zarządzania kontekstem (context engineering) w systemach agentowych/RAG.
+            </div>
+            <div class="requirements">
+                <h3>Zadania:</h3>
+                <ul>
+                    <li>Zbadać i zaimplementować system konwersacyjny (np. czat) obsługujący zarządzanie długim kontekstem (np. kilkunasto/kilkudziesięcio stronicowe dokumenty, >10 tys. tokenów per dokument) z wybranymi technikami np. semantic chunking, document structure-based chunking w wybranej dziedzinie (np. inżynieria, IT, programowanie itp.)</li>
+                    <li>Zaimplementować wybraną metodę query understanding np. query rewriter</li>
+                    <li>Porównać co najmniej 2 strategie context engineering np. context compression/summarizing, hierarchical summarization</li>
+                    <li>Zbadanie oraz zaimplementowanie wybranej metody context cache/semantic cache</li>
+                    <li>Zbadanie problemu "Lost-in-the-middle" i sposobów jego mitygacji</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ostatnia aktualizacja: 10 października 2025</p>
+    </footer>
+</body>
+</html>
