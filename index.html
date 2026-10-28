@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -161,14 +161,14 @@
 <body>
     <header>
         <h1>📚 Zadania Projektowe</h1>
-        <p>Wprowadzenie do przetwarzania języka naturalnego [NLP] - Lato 2026 - LISTA GRUP ZOSTAŁA ZAMKNIĘTA</p>
+        <p>Wprowadzenie do przetwarzania języka naturalnego [NLP] - Zima 2026</p>
     </header>
 
     <div class="container">
         <div class="exercise">
             <div class="exercise-header">
                 <div class="exercise-number">5</div>
-                <div class="exercise-title">Implementacja i ewaluacja systemu RAG - TEMAT NIEDOSTĘPNY</div>
+                <div class="exercise-title">Implementacja i ewaluacja systemu RAG</div>
             </div>
             <div class="exercise-description">
                 <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
@@ -189,7 +189,7 @@
         <div class="exercise">
             <div class="exercise-header">
                 <div class="exercise-number">6</div>
-                <div class="exercise-title">Agent SQL do konwersacyjnej analizy danych - TEMAT NIEDOSTĘPNY</div>
+                <div class="exercise-title">Agent SQL do konwersacyjnej analizy danych</div>
             </div>
             <div class="exercise-description">
                 <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
@@ -213,8 +213,8 @@
                 <div class="exercise-title">System hybrydowy Vector RAG + GraphRAG</div>
             </div>
             <div class="exercise-description">
-                <strong>Zespół:</strong> 2 osoby | <strong>Język:</strong> Python<br><br>
-                Implementacja i ewaluacja hybrydowego systemu wiedzy Vector RAG + GraphRAG - z wykorzystaniem grafów wiedzy - TEMAT NIEDOSTĘPNY
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
+                Implementacja i ewaluacja hybrydowego systemu wiedzy Vector RAG + GraphRAG - z wykorzystaniem grafów wiedzy.
             </div>
             <div class="requirements">
                 <h3>Zadania:</h3>
@@ -235,10 +235,10 @@
         <div class="exercise">
             <div class="exercise-header">
                 <div class="exercise-number">8</div>
-                <div class="exercise-title">System wieloagentowy do rozwiązywania zadań - TEMAT NIEDOSTĘPNY</div>
+                <div class="exercise-title">System wieloagentowy do rozwiązywania zadań</div>
             </div>
             <div class="exercise-description">
-                <strong>Zespół:</strong> 2 osoby | <strong>Język:</strong> Python<br><br>
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
                 Implementacja systemu wieloagentowego do współpracy agentów AI w rozwiązywaniu złożonych zadań.
             </div>
             <div class="requirements">
@@ -256,7 +256,7 @@
         <div class="exercise">
             <div class="exercise-header">
                 <div class="exercise-number">9</div>
-                <div class="exercise-title">Context Engineering - zaawansowane zarządzanie kontekstem - TEMAT NIEDOSTĘPNY</div>
+                <div class="exercise-title">Context Engineering - zaawansowane zarządzanie kontekstem</div>
             </div>
             <div class="exercise-description">
                 <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
@@ -273,10 +273,43 @@
                 </ul>
             </div>
         </div>
+
+        <div class="exercise">
+            <div class="exercise-header">
+                <div class="exercise-number">10</div>
+                <div class="exercise-title">Klasyfikacja tekstu – porównanie klasycznych metod NLP, modeli decyzyjnych typu Jev i generatywnych LLM</div>
+            </div>
+            <div class="exercise-description">
+                <strong>Zespół:</strong> 2-3 osoby | <strong>Język:</strong> Python<br><br>
+                Porównanie skuteczności, kalibracji, kosztu i szybkości różnych podejść do klasyfikacji tekstów (np. analiza sentymentu opinii, kategoryzacja zgłoszeń, wykrywanie spamu) w wybranej dziedzinie, ze szczególnym uwzględnieniem modeli decyzyjnych typu „System 1” (typed-decision models).
+            </div>
+            <div class="requirements">
+                <h3>Zadania:</h3>
+                <ul>
+                    <li>Wybrać i przygotować zbiór danych do klasyfikacji: np. publiczny zbiór, w tym polskojęzyczny (np. PolEmo 2.0), lub własny zbiór np. syntetyczny z min. 100 przykładów</li>
+                    <li>Zaimplementować klasyfikator klasyczny jako punkt odniesienia (np. TF-IDF + regresja logistyczna, SVM, drzewo decyzyjne lub inny wybrany)</li>
+                    <li>Dostroić niewielki model typu encoder (np. HerBERT lub inny wybrany) do zadania klasyfikacji</li>
+                    <li>Zastosować model decyzyjny typu Jev, np. basal-1.5-mini (1.5B) lub nowszy basal-2.0-mini lub inny wybrany. Zbadać różne sposoby sformułowania zadania:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>pojedyncze pytanie typu „choice”,</li>
+                            <li>dekompozycję na kilka pytań typu tak/nie (np. osobne kryteria spamu),</li>
+                            <li>ocenę w skali (score)</li>
+                        </ul>
+                    </li>
+                    <li>Zastosować generatywny LLM w trybie zero-shot i few-shot</li>
+                    <li>Przeprowadzić ewaluację z wykorzystaniem następujących miar:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>accuracy, macierz pomyłek (confusion matrix),</li>
+                            <li>czas działania i koszt klasyfikacji 1000 tekstów</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <p>Ostatnia aktualizacja: 3 marca 2026</p>
+        <p>Ostatnia aktualizacja: 28 października 2026</p>
     </footer>
 </body>
 </html>
